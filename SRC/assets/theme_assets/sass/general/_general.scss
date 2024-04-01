@@ -78,7 +78,9 @@ ul {
 }
 
 .contents {
-  padding: 74px 15px 72px 295px;
+/*   padding: 74px 15px 72px 295px; */
+padding: 73px 15px 72px 16px;
+
   transition: var(--transition);
   background-color: var(--contents-bg);
 
@@ -280,7 +282,7 @@ body.top-menu{
   .contents {
     padding-left: 15px;
     @include md {
-      padding: 73px 15px 64px 16px;
+ /*      padding: 73px 15px 64px 16px; */
     }
     @include sm {
       padding: 56px 0 85px 0;

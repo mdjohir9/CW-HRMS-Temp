@@ -207,8 +207,8 @@
 /* table top region */
 .table-top-regions {
   border: 1px solid var(--border-color);
-  max-height: 280px;
-  max-width: 466px;
+/*   max-height: 280px;
+  max-width: 466px; */
   overflow-y: auto;
 
   &::-webkit-scrollbar {
