@@ -446,7 +446,7 @@ chartjsBarChart(
         "Thu",
         "Fri",
     ],
-    198,
+    98,
     "Target",
     "Total Sales"
 );
@@ -466,7 +466,7 @@ $('#salesgrowth2-tab').on("shown.bs.tab", function () {
             "6-7",
             "7-8",
         ],
-        198,
+        98,
         "Target",
         "Total Sales"
     );
@@ -491,7 +491,7 @@ $('#salesgrowth3-tab').on("shown.bs.tab", function () {
             "Nov",
             "Dec",
         ],
-        198,
+        98,
         "Target",
         "Total Sales"
     );
@@ -902,13 +902,13 @@ function exampleBarChart(selector, height, indexing) {
             type: "bar",
             data: {
                 labels: [
-                    "Jan",
-                    "Feb",
-                    "Mar",
-                    "Apr",
-                    "May",
-                    "Jun",
-                    "Jul",
+                    "1st",
+                    "2nd",
+                    "3rd",
+                    "4th",
+                    "5th",
+                    "6th",
+                    "7th",
                 ],
                 datasets: [{
                     label: 'My First Dataset',
@@ -2780,3 +2780,43 @@ chartjsLineChartSmall(
     "#FA8B0C",
     [0, 10, 8, 14, 7, 10]
 );
+
+
+/*----Employee Relase and join chart start -----*/
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Month');
+data.addColumn('number', 'New Joins');
+data.addColumn('number', 'Releases');
+data.addColumn({type: 'string', role: 'tooltip', 'p': {'html': true}});
+data.addRows([
+['Jan', 10, 5, 'New Joins: 10<br>Releases: 5'],
+['Feb', 12, 3, 'New Joins: 12<br>Releases: 3'],
+['Mar', 8, 7, 'New Joins: 8<br>Releases: 7'],
+['Apr', 15, 2, 'New Joins: 15<br>Releases: 2'],
+['May', 9, 4, 'New Joins: 9<br>Releases: 4'],
+['Jun', 11, 6, 'New Joins: 11<br>Releases: 6']
+]);
+
+var options = {
+title: 'Company New Joins and Releases (Last 6 Months)',
+height:400,
+hAxis: {
+  title: 'Month'
+},
+vAxis: {
+  title: 'Number of Employees'
+},
+seriesType: 'bars',
+series: {
+  0: { color: '#33cc33', targetAxisIndex: 0 },
+  1: { color: '#ff3333', targetAxisIndex: 0 }
+}
+};
+
+var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+chart.draw(data, options);
+}
+

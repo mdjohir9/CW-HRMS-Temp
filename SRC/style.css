@@ -147,6 +147,11 @@ NB: this file contains the list of components/scss partial along with the style.
 
 ***************************/
 /* Custom bootstrap classes */
+
+.Dashbord{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: var(--color-dark);
 }
@@ -30981,3 +30986,6 @@ body:after {
   }
 }
 /*# sourceMappingURL=maps/style.css.map */
+.footer-wrapper {
+  bottom: -150px;
+}

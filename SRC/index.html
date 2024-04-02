@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>HRMS</title>
+   <title>CW-HRMS</title>
 
    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -69,7 +69,7 @@
          <div class="navbar-left">
             <div class="logo-area">
                <a class="navbar-brand" href="index.html">
-                  <h2 class="dark">HRMS</h2>
+                  <h2 class="dark">CW-HRMS</h2>
                 
                </a>
                <a href="#" class="sidebar-toggle">
@@ -1197,14 +1197,11 @@
       </nav>
    </header>
    <main class="main-content">
-
-      <div class="contents">
-
+      <div class="Dashbord">
          <div class="crm mb-25">
             <div class="container-fluid">
                <div class="row ">
                   <div class="col-lg-12">
-
                      <div class="breadcrumb-main">
                         <h4 class="text-capitalize breadcrumb-title">Demo 1</h4>
                         <div class="breadcrumb-action justify-content-center flex-wrap">
@@ -1220,14 +1217,9 @@
                   </div>
                   <div class="col-xxl-6">
                      <div class="row">
-                        <div class="col-xxl-6 col-sm-6 mb-25">
+                        <div class="col-xxl-6 col-xxl-6 col-sm-6 mb-25">
                            <!-- Card 1  -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
-
-
-
-
-
                               <div class="overview-content w-100">
                                  <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
                                     <div class="ap-po-details__titlebar">
@@ -1254,11 +1246,6 @@
                         <div class="col-xxl-6 col-sm-6 mb-25">
                            <!-- Card 2 -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
-
-
-
-
-
                               <div class="overview-content w-100">
                                  <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
                                     <div class="ap-po-details__titlebar">
@@ -1285,11 +1272,6 @@
                         <div class="col-xxl-6 col-sm-6 mb-25">
                            <!-- Card 3 -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
-
-
-
-
-
                               <div class="overview-content w-100">
                                  <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
                                     <div class="ap-po-details__titlebar">
@@ -1316,11 +1298,6 @@
                         <div class="col-xxl-6 col-sm-6 mb-25">
                            <!-- Card 4  -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
-
-
-
-
-
                               <div class="overview-content w-100">
                                  <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
                                     <div class="ap-po-details__titlebar">
@@ -1346,9 +1323,7 @@
                         </div>
                      </div>
                   </div>
-                 
-                  <div class="col-xxl-4 mb-25">
-
+                  <div class="col-xxl-6 mb-25">
                      <div class="card border-0 px-25 h-100">
                         <div class="card-header px-0 border-0">
                            <h6>Daily Preseant Absent Ratio</h6>
@@ -1409,20 +1384,16 @@
                                     <div>
                                        <canvas id="salesGrowthMonth"></canvas>
                                     </div>
-
-
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-
                   </div>
-                  <div class="col-xxl-8 mb-25">
-
+                  <div class="col-xxl-12 mb-2 pb-10">
                      <div class="card border-0 h-100">
                         <div class="card-header">
-                           <h6>Sales by Location</h6>
+                           <h6>Daily Attendance Summary:</h6>
                            <div class="card-extra">
                               <ul class="card-tab-links nav-tabs nav" role="tablist">
                                  <li>
@@ -1454,51 +1425,42 @@
                            <div class="tab-content">
                               <div class="tab-pane active show" id="se_region-today" role="tabpanel" aria-labelledby="se_region-today-tab">
                                  <div class="row">
-                                    <div class="col-md-6">
-
-                                       <div class="table-responsive table-top-regions">
+                                    <div class="col-md-12">
+                                       <div class="table-responsive">
                                           <table class="table table--default table-borderless">
                                              <thead>
                                                 <tr>
-                                                   <th>Top region</th>
-                                                   <th>order</th>
-                                                   <th>Revenue</th>
+                                                   <th>Department </th>
+                                                   <th>Total Employee</th>
+                                                   <th>Male</th>
+                                                   <th>Female</th>
+                                                   <th>Present</th>
+                                                   <th>Present %</th>
+                                                   <th>Absent</th>
+                                                   <th>Absent %</th>
+                                                   <th>Leave</th>
+                                                   <th>Leave %</th>
+                                                   <th>Off Day</th>
+                                                   <th>Off Day %</th>
                                                 </tr>
                                              </thead>
                                              <tbody>
-                                                <tr>
-                                                   <td>United States</td>
-                                                   <td>90</td>
-                                                   <td>$536</td>
-                                                </tr>
-                                                <tr>
-                                                   <td>Australia</td>
-                                                   <td>70</td>
-                                                   <td>573</td>
-                                                </tr>
-                                                <tr>
-                                                   <td>Canada</td>
-                                                   <td>30</td>
-                                                   <td>457</td>
-                                                </tr>
-                                                <tr>
-                                                   <td>Japan</td>
-                                                   <td>50</td>
-                                                   <td>524</td>
-                                                </tr>
-                                                <tr>
-                                                   <td>India</td>
-                                                   <td>20</td>
-                                                   <td>354</td>
+                                                <tr class="text-center">
+                                                   <td>Oparetor</td>
+                                                   <td>500</td>
+                                                   <td>100</td>
+                                                   <td>400</td>
+                                                   <td>450</td>
+                                                   <td>95%</td>
+                                                   <td>5%</td>
+                                                   <td>10</td>
+                                                   <td>1.0%</td>
+                                                   <td>1</td>
+                                                   <td>1</td>
+                                                   <td>0.1%</td>
                                                 </tr>
                                              </tbody>
                                           </table>
-                                       </div>
-
-                                    </div>
-                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
-                                       <div class="regions-svg">
-                                          <div id="s_region-map_T"></div>
                                        </div>
                                     </div>
                                  </div>
@@ -1506,7 +1468,6 @@
                               <div class="tab-pane" id="se_region-week" role="tabpanel" aria-labelledby="se_region-week-tab">
                                  <div class="row">
                                     <div class="col-md-6">
-
                                        <div class="table-responsive table-top-regions">
                                           <table class="table table--default table-borderless">
                                              <thead>
@@ -1659,18 +1620,316 @@
                            </div>
                         </div>
                      </div>
+                  </div>
+                  <div id="chart_div" class="col-lg-4 col-md-6 col-sm-12"></div>
+                  <!----Male Female Start---->
+                  <div class="col-xxl-4 col-md-6 col-sm-12 mb-25">
+                     <div class="device-chart-box">
+
+                        <div class="card border-0">
+                           <div class="card-header">
+                              <h6>Details Employees Info</h6>
+                           </div>
+                           <!-- ends: .card-header -->
+                           <div class="card-body pt-20 pb-30">
+                              <div class="tab-content">
+                                 <div class="tab-pane fade active show" id="se_device-today" role="tabpanel" aria-labelledby="se_device-today-tab">
+                                    <div class="device-pieChart-wrap position-relative">
+
+                                       <div class="">
+                                          <div class="salesDonutToday"></div>
+                                       </div>
+
+                                    </div>
+                                    <div class="session-wrap session-wrap--top--4">
+                                       <div class="session-single">
+                                          <div class="chart-label">
+                                             <span class="label-dot dot-primary"></span>
+                                             30%
+                                          </div>
+                                       </div>
+                                       <div class="session-single">
+                                          <div class="chart-label">
+                                             <span class="label-dot dot-info"></span>
+                                             30%
+                                          </div>
+                                       </div>
+
+                                    </div>
+                                    <div class="session-wrap session-wrap--2">
+                                       <div class="session-single">
+                                          <strong>100</strong>
+                                          <div class="chart-label">
+                                             Male
+                                          </div>
+                                       </div>
+                                       <div class="session-single">
+                                          <strong>100</strong>
+                                          <div class="chart-label">
+                                             Felame
+                                          </div>
+                                       </div>
+   
+                                    </div>
+                                 </div>
+                                 
+                              </div>
+                              <!-- ends: .session-wrap -->
+                           </div>
+                           <!-- ends: .card-body -->
+                        </div>
+
+                     </div>
+                  </div>
+                  <!-------Stap Workar Ratio------>
+                  <div class="col-xxl-4 col-lg-6 mb-25">
+
+                     <div class="card border-0">
+                        <div class="card-header">
+                           <h6>Stap Workar Ratio</h6>
+                           <div class="dropdown dropleft">
+                              <a href="#" role="button" id="performance" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <img src="img/svg/more-horizontal.svg" alt="more-horizontal" class="svg">
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="performance">
+                                 <a class="dropdown-item" href="#">Action</a>
+                                 <a class="dropdown-item" href="#">Another action</a>
+                                 <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- ends: .card-header -->
+                        <div class="card-body pt-20 pb-30">
+                           <div class="device-pieChart-wrap position-relative">
+
+                              <div class="">
+                                 <div class="performance_overview"></div>
+                              </div>
+
+                           </div>
+                           <div class="session-wrap session-wrap--top--4">
+                              <div class="session-single">
+                                 <div class="chart-label new">
+                                    <span class="label-dot dot-primary"></span>
+                                    Target
+                                 </div>
+                              </div>
+                              <div class="session-single">
+                                 <div class="chart-label new">
+                                    <span class="label-dot dot-info"></span>
+                                    In Progress
+                                 </div>
+                              </div>
+                              <div class="session-single">
+                                 <div class="chart-label new">
+                                    <span class="label-dot dot-warning"></span>
+                                    Completed
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- ends: .session-wrap -->
+                        </div>
+                        <!-- ends: .card-body -->
+                     </div>
 
                   </div>
-                  <div class="col-xxl-6 col-lg-6 mb-25">
-
-                 
+                  
+                  <div class="col-lg-8">
+                     <div class="row">
+                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
+                           <!-- Card 1  -->
+                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
+                              <div class="overview-content w-100">
+                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
+                                    <div class="ap-po-details__titlebar">
+                                       <h1>100+</h1>
+                                       <p>Todays Preseant</p>
+                                    </div>
+                                    <div class="ap-po-details__icon-area">
+                                       <div class="svg-icon order-bg-opacity-primary color-primary">
+      
+                                          <i class="uil uil-briefcase-alt"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="ap-po-details-time">
+                                    <span class="color-success"><i class="las la-arrow-up"></i>
+                                       <strong>25.36%</strong></span>
+                                    <small>Since last month</small>
+                                 </div>
+                              </div>
+      
+                           </div>
+                           <!-- Card 1 End  -->
+                        </div>
+                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
+                           <!-- Card 1  -->
+                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
+                              <div class="overview-content w-100">
+                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
+                                    <div class="ap-po-details__titlebar">
+                                       <h1>100+</h1>
+                                       <p>Todays Preseant</p>
+                                    </div>
+                                    <div class="ap-po-details__icon-area">
+                                       <div class="svg-icon order-bg-opacity-primary color-primary">
+      
+                                          <i class="uil uil-briefcase-alt"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="ap-po-details-time">
+                                    <span class="color-success"><i class="las la-arrow-up"></i>
+                                       <strong>25.36%</strong></span>
+                                    <small>Since last month</small>
+                                 </div>
+                              </div>
+      
+                           </div>
+                           <!-- Card 1 End  -->
+                        </div>
+      
+                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
+                           <!-- Card 1  -->
+                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
+                              <div class="overview-content w-100">
+                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
+                                    <div class="ap-po-details__titlebar">
+                                       <h1>100+</h1>
+                                       <p>Todays Preseant</p>
+                                    </div>
+                                    <div class="ap-po-details__icon-area">
+                                       <div class="svg-icon order-bg-opacity-primary color-primary">
+      
+                                          <i class="uil uil-briefcase-alt"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="ap-po-details-time">
+                                    <span class="color-success"><i class="las la-arrow-up"></i>
+                                       <strong>25.36%</strong></span>
+                                    <small>Since last month</small>
+                                 </div>
+                              </div>
+      
+                           </div>
+                           <!-- Card 1 End  -->
+                        </div>
+                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
+                           <!-- Card 1  -->
+                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
+                              <div class="overview-content w-100">
+                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
+                                    <div class="ap-po-details__titlebar">
+                                       <h1>100+</h1>
+                                       <p>Todays Preseant</p>
+                                    </div>
+                                    <div class="ap-po-details__icon-area">
+                                       <div class="svg-icon order-bg-opacity-primary color-primary">
+      
+                                          <i class="uil uil-briefcase-alt"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="ap-po-details-time">
+                                    <span class="color-success"><i class="las la-arrow-up"></i>
+                                       <strong>25.36%</strong></span>
+                                    <small>Since last month</small>
+                                 </div>
+                              </div>
+      
+                           </div>
+                           <!-- Card 1 End  -->
+                        </div>
+                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
+                           <!-- Card 1  -->
+                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
+                              <div class="overview-content w-100">
+                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
+                                    <div class="ap-po-details__titlebar">
+                                       <h1>100+</h1>
+                                       <p>Todays Preseant</p>
+                                    </div>
+                                    <div class="ap-po-details__icon-area">
+                                       <div class="svg-icon order-bg-opacity-primary color-primary">
+      
+                                          <i class="uil uil-briefcase-alt"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="ap-po-details-time">
+                                    <span class="color-success"><i class="las la-arrow-up"></i>
+                                       <strong>25.36%</strong></span>
+                                    <small>Since last month</small>
+                                 </div>
+                              </div>
+      
+                           </div>
+                           <!-- Card 1 End  -->
+                        </div>
+      
+                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
+                           <!-- Card 1  -->
+                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
+                              <div class="overview-content w-100">
+                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
+                                    <div class="ap-po-details__titlebar">
+                                       <h1>100+</h1>
+                                       <p>Todays Preseant</p>
+                                    </div>
+                                    <div class="ap-po-details__icon-area">
+                                       <div class="svg-icon order-bg-opacity-primary color-primary">
+      
+                                          <i class="uil uil-briefcase-alt"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="ap-po-details-time">
+                                    <span class="color-success"><i class="las la-arrow-up"></i>
+                                       <strong>25.36%</strong></span>
+                                    <small>Since last month</small>
+                                 </div>
+                              </div>
+      
+                           </div>
+                           <!-- Card 1 End  -->
+                        </div>
+                     </div>
                   </div>
-                
+
+                  <div class="col-lg-4 mb-4">
+                     <div class="card">
+                        <div class="card-header">
+                          Line Wise Employee
+                        </div>
+                        <div class="card-body">
+   
+   
+                           <div>
+                              <canvas id="barChartHorizontal"></canvas>
+                           </div>
+   
+   
+                        </div>
+                     </div>
+                  </div>
+
+
                </div>
                <!-- ends: .row -->
+
+               <!-- Start: .row -->
+
+               <div class=""> 
+                  <div class="row">
+               
+   
+                  </div>
+               </div>
+
+
             </div>
          </div>
-
       </div>
       <footer class="footer-wrapper">
          <div class="footer-wrapper__inside">
