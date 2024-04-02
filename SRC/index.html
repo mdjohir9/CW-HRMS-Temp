@@ -1215,9 +1215,9 @@
                      </div>
 
                   </div>
-                  <div class="col-xxl-6">
+                  <div class="col-lg-6">
                      <div class="row">
-                        <div class="col-xxl-6 col-xxl-6 col-sm-6 mb-25">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-25">
                            <!-- Card 1  -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
                               <div class="overview-content w-100">
@@ -1243,7 +1243,7 @@
                            </div>
                            <!-- Card 1 End  -->
                         </div>
-                        <div class="col-xxl-6 col-sm-6 mb-25">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-25">
                            <!-- Card 2 -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
                               <div class="overview-content w-100">
@@ -1269,7 +1269,7 @@
                            </div>
                            <!-- Card 2 End  -->
                         </div>
-                        <div class="col-xxl-6 col-sm-6 mb-25">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-25">
                            <!-- Card 3 -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
                               <div class="overview-content w-100">
@@ -1295,7 +1295,7 @@
                            </div>
                            <!-- Card 3 End  -->
                         </div>
-                        <div class="col-xxl-6 col-sm-6 mb-25">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-25">
                            <!-- Card 4  -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
                               <div class="overview-content w-100">
@@ -1323,7 +1323,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xxl-6 mb-25">
+                  <div class="col-lg-6 col-md-12 col-sm-12 mb-25">
                      <div class="card border-0 px-25 h-100">
                         <div class="card-header px-0 border-0">
                            <h6>Daily Preseant Absent Ratio</h6>
@@ -1621,9 +1621,55 @@
                         </div>
                      </div>
                   </div>
-                  <div id="chart_div" class="col-lg-4 col-md-6 col-sm-12"></div>
-                  <!----Male Female Start---->
-                  <div class="col-xxl-4 col-md-6 col-sm-12 mb-25">
+               <!---------Monthly New Join / Release Chart Start ------->
+                  <div class="col-lg-6 col-md-6 col-sm-12 mb-25">
+                     <div class="card border-0 cashflowChart2">
+                        <div class="card-header border-0 px-25 pt-25 pb-15">
+                           <div class="chartLine-po-details__overview-content w-100">
+                              <div class=" chartLine-po-details__content d-flex flex-wrap justify-content-between">
+                                 <div class="chartLine-po-details__titlebar">
+                                    <h1>Monthly New Join / Release</h1>
+                                 </div>
+                              </div>
+                              <div class="chartLine-po-details__time">
+                                 <h5>$8,550</h5>
+                                 <span class="color-success"><i class="fas fa-arrow-up"></i>
+                                    <strong>25.36%</strong></span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <!-- ends: .card-header -->
+                        <div class="card-body pt-0 ">
+                           <div class="cashflow-chart">
+                              <ul class="legend-static mb-30 mt-1 d-flex justify-content-center">
+                                 <li class="custom-label">
+                                    <span class="bg-primary"></span>New Join
+                                 </li>
+                                 <li class="custom-label">
+                                    <span class="bg-secondary"></span>Relase
+                                 </li>
+                              </ul>
+                              <div class="parentContainer">
+
+
+                                 <div>
+                                    <canvas id="profitGrowthToday"></canvas>
+                                 </div>
+
+
+                              </div>
+                           </div>
+                        </div>
+                        <!-- ends: .card-body -->
+                     </div>
+
+                  </div>
+               <!---------Monthly New Join / Release Chart End ------->
+
+   <!--<div id="chart_div" class="col-lg-4 col-md-6 col-sm-12"></div>-->                  <!----Male Female Start---->
+
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-25">
                      <div class="device-chart-box">
 
                         <div class="card border-0">
@@ -1682,7 +1728,7 @@
                      </div>
                   </div>
                   <!-------Stap Workar Ratio------>
-                  <div class="col-xxl-4 col-lg-6 mb-25">
+                  <div class=" col-lg-3 col-md-6 col-sm-12 mb-25">
 
                      <div class="card border-0">
                         <div class="card-header">
@@ -1736,7 +1782,7 @@
                   
                   <div class="col-lg-8">
                      <div class="row">
-                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-25">
                            <!-- Card 1  -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
                               <div class="overview-content w-100">
@@ -1762,86 +1808,7 @@
                            </div>
                            <!-- Card 1 End  -->
                         </div>
-                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
-                           <!-- Card 1  -->
-                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
-                              <div class="overview-content w-100">
-                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
-                                    <div class="ap-po-details__titlebar">
-                                       <h1>100+</h1>
-                                       <p>Todays Preseant</p>
-                                    </div>
-                                    <div class="ap-po-details__icon-area">
-                                       <div class="svg-icon order-bg-opacity-primary color-primary">
-      
-                                          <i class="uil uil-briefcase-alt"></i>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="ap-po-details-time">
-                                    <span class="color-success"><i class="las la-arrow-up"></i>
-                                       <strong>25.36%</strong></span>
-                                    <small>Since last month</small>
-                                 </div>
-                              </div>
-      
-                           </div>
-                           <!-- Card 1 End  -->
-                        </div>
-      
-                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
-                           <!-- Card 1  -->
-                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
-                              <div class="overview-content w-100">
-                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
-                                    <div class="ap-po-details__titlebar">
-                                       <h1>100+</h1>
-                                       <p>Todays Preseant</p>
-                                    </div>
-                                    <div class="ap-po-details__icon-area">
-                                       <div class="svg-icon order-bg-opacity-primary color-primary">
-      
-                                          <i class="uil uil-briefcase-alt"></i>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="ap-po-details-time">
-                                    <span class="color-success"><i class="las la-arrow-up"></i>
-                                       <strong>25.36%</strong></span>
-                                    <small>Since last month</small>
-                                 </div>
-                              </div>
-      
-                           </div>
-                           <!-- Card 1 End  -->
-                        </div>
-                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
-                           <!-- Card 1  -->
-                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
-                              <div class="overview-content w-100">
-                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
-                                    <div class="ap-po-details__titlebar">
-                                       <h1>100+</h1>
-                                       <p>Todays Preseant</p>
-                                    </div>
-                                    <div class="ap-po-details__icon-area">
-                                       <div class="svg-icon order-bg-opacity-primary color-primary">
-      
-                                          <i class="uil uil-briefcase-alt"></i>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="ap-po-details-time">
-                                    <span class="color-success"><i class="las la-arrow-up"></i>
-                                       <strong>25.36%</strong></span>
-                                    <small>Since last month</small>
-                                 </div>
-                              </div>
-      
-                           </div>
-                           <!-- Card 1 End  -->
-                        </div>
-                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-25">
                            <!-- Card 1  -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
                               <div class="overview-content w-100">
@@ -1868,7 +1835,86 @@
                            <!-- Card 1 End  -->
                         </div>
       
-                        <div class="col-xxl-4 col-lg-6 col-sm-12 mb-25">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-25">
+                           <!-- Card 1  -->
+                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
+                              <div class="overview-content w-100">
+                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
+                                    <div class="ap-po-details__titlebar">
+                                       <h1>100+</h1>
+                                       <p>Todays Preseant</p>
+                                    </div>
+                                    <div class="ap-po-details__icon-area">
+                                       <div class="svg-icon order-bg-opacity-primary color-primary">
+      
+                                          <i class="uil uil-briefcase-alt"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="ap-po-details-time">
+                                    <span class="color-success"><i class="las la-arrow-up"></i>
+                                       <strong>25.36%</strong></span>
+                                    <small>Since last month</small>
+                                 </div>
+                              </div>
+      
+                           </div>
+                           <!-- Card 1 End  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-25">
+                           <!-- Card 1  -->
+                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
+                              <div class="overview-content w-100">
+                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
+                                    <div class="ap-po-details__titlebar">
+                                       <h1>100+</h1>
+                                       <p>Todays Preseant</p>
+                                    </div>
+                                    <div class="ap-po-details__icon-area">
+                                       <div class="svg-icon order-bg-opacity-primary color-primary">
+      
+                                          <i class="uil uil-briefcase-alt"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="ap-po-details-time">
+                                    <span class="color-success"><i class="las la-arrow-up"></i>
+                                       <strong>25.36%</strong></span>
+                                    <small>Since last month</small>
+                                 </div>
+                              </div>
+      
+                           </div>
+                           <!-- Card 1 End  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-25">
+                           <!-- Card 1  -->
+                           <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
+                              <div class="overview-content w-100">
+                                 <div class=" ap-po-details-content d-flex flex-wrap justify-content-between">
+                                    <div class="ap-po-details__titlebar">
+                                       <h1>100+</h1>
+                                       <p>Todays Preseant</p>
+                                    </div>
+                                    <div class="ap-po-details__icon-area">
+                                       <div class="svg-icon order-bg-opacity-primary color-primary">
+      
+                                          <i class="uil uil-briefcase-alt"></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="ap-po-details-time">
+                                    <span class="color-success"><i class="las la-arrow-up"></i>
+                                       <strong>25.36%</strong></span>
+                                    <small>Since last month</small>
+                                 </div>
+                              </div>
+      
+                           </div>
+                           <!-- Card 1 End  -->
+                        </div>
+      
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-25">
                            <!-- Card 1  -->
                            <div class="ap-po-details ap-po-details--2 p-25 radius-xl d-flex justify-content-between">
                               <div class="overview-content w-100">
@@ -1897,15 +1943,20 @@
                      </div>
                   </div>
 
-                  <div class="col-lg-4 mb-4">
+                  <div class="col-lg-4 col-md-6 col-sm-12 mb-25">
+
                      <div class="card">
                         <div class="card-header">
                           Line Wise Employee
                         </div>
                         <div class="card-body">
+                           <style>
+                              #barChartHorizontal{
+                                 height: 40px;
+                              }
+                           </style>
    
-   
-                           <div>
+                           <div class="">
                               <canvas id="barChartHorizontal"></canvas>
                            </div>
    
